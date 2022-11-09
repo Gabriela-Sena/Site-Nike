@@ -1,0 +1,484 @@
+
+body{
+    background-color: #ffffff;
+    margin: 0px;
+    font-family: 'Quicksand', sans-serif;
+    display: block;
+    grid-template-areas: 
+        'header header header header'
+        'aside aside aside aside'
+        'main main main main'
+        'footer footer footer footer';
+}
+
+header{
+    grid-area: header;
+    background-color: #313335;
+    margin: 0px;
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+    padding: 20px 30px;
+    box-shadow: rgba(113, 113, 117, 0.25) 2px 12px 13px -25px, rgba(0, 0, 0, 0.3) 10px 7px 13px 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+}
+
+ul{
+    list-style-type:none;
+    padding-left:0;
+    text-decoration:none;
+}
+
+svg, li:hover{
+    filter:drop-shadow(0 0 1px rgb(252, 252, 252));
+}
+
+header nav ul li{
+    display: inline;
+    padding-left: 30px;
+    border: 10px;
+}
+
+header nav{
+    display:block;
+    position:fixed;
+}
+
+header p{
+    margin: 0px;
+    display: inline-block;
+}
+
+aside{
+    grid-area: aside;
+    background-color: #000000;
+    color: #47b5e8;
+    font-family: Helvetica, sans-serif;
+    font-size: 1rem;
+    padding: 10px 25px;
+    padding-top: 60px;
+    margin:none;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.unicef-logo, .logo-apple{
+    margin:0px;
+}
+
+p:hover{
+    text-shadow:(0 0 3px rgb(255, 255, 255)); 
+}
+
+.anuncio1{
+    grid-area: main;
+    background-color: #f3f5f5;
+    padding: 100px 50px;
+    margin: 0px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.7rem;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+}
+
+.anuncio2, .anuncio3{
+    grid-area: main;
+    background-color: #fbfbfd;
+    padding: 100px 50px;
+    margin-top: 8px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.7rem;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.anuncio3img{
+    grid-area: main;
+    background-color: #fbfbfd;
+    display:flex;
+    margin-top: none;
+    padding-bottom: 0px;
+    text-align:end;
+    justify-content:center;
+
+}
+
+.anuncio2 li, .anuncio3 li, .anuncio4 li{
+    display:inline-block;
+    margin: 0 0 0 15px;
+    text-align:center;
+}
+
+.anuncio4, .sobreaapple{
+    grid-area: main;
+    background-color: #000000;
+    padding: 100px 50px;
+    margin-top: 0px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.7rem;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-left: 30px;
+    border: 30px;
+    margin-top:0px;
+}
+
+.sobreaapple{
+    margin-top:-3px;
+}
+
+.rodape{
+    grid-area:footer;
+    padding: 60px 60px;
+    text-align: justify;
+    list-style-type: none;
+    align-items: flex-end;
+}
+
+hr{
+    color: #7f8284;
+}
+
+.rodape li{
+    display:flexbox;
+    text-align: left;
+    position: relative;
+}
+
+.rodape svg{
+    position: absolute;
+    left: 1170px;
+}
+
+a{
+    color:turquoise;
+}
+
+.anuncio3 > b{
+    text-decoration-color: #fbfbfd;
+}
+
+/*  -------- IPHONE 13 ----------*/
+
+.anuncioIphone13, .anuncioempresa, .anuncioAutor{
+    grid-area: aside;
+    background-color: #dfd8d8;
+    color: #000000;
+    font-family: Helvetica, sans-serif;
+    font-size: 1rem;
+    padding: 10px 10px;
+    padding-top: 40px;
+    margin:none;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.apresentacaoIphone13{
+    grid-area: main;
+    padding: 100px 50px;
+    margin-top: 0px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.2rem;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-left: 30px;
+    border: 30px;
+    margin-top:-21px;
+}
+
+.tituloiPhone{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 3.2rem;
+}
+
+.botaoiPhone{
+    color: #FFF;
+    background-color: RGB(0, 113, 227);
+    border: none;
+    height: 40px;
+    line-height: 30px;
+    padding: 0 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.botaoiPhone:hover{
+    transform: scale(1.05);
+}
+
+.imgIphone1{
+    grid-area: main;
+    display:inline-flex;
+    align-items: flex-start;
+    margin-top: none;
+    justify-content:center;
+}
+
+.buttoniPhone13Pro, .buttoniPhone13ProMax, .buttonArm{
+    color: rgb(0, 0, 0);
+    background-color: RGB(255, 255, 255);
+    border-radius: 10px;
+    border-color: #959798;
+    height: 100px;
+    line-height: 20px;
+    padding: 0 24px;
+    text-transform:lowercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1rem;
+    margin:10px;
+    align-content:center;
+
+}
+
+.escritaModelo{
+    justify-content:center;
+    text-align: center;
+    margin:39px;
+}
+
+.buttoniPhone13Pro:hover{
+    transform: scale(1.05);
+}
+
+.buttoniPhone13ProMax:hover{
+    transform: scale(1.05);
+}
+
+section{
+    grid-area: main;
+    display:inline-flex;
+    align-content:center;
+}
+
+.buttonArm, .buttoniPhone13Pro, .buttoniPhone13ProMax > b{
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.buttonArm:hover{
+    transform: scale(1.05);
+}
+
+.oquevemnacaixa{
+    grid-area: main;
+    background-color: #fbfbfd;
+    padding: 60px 50px;
+    margin-top: 8px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.7rem;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-left: 30px;
+    line-height: 60px;
+}
+
+.oquevemnacaixa > p{
+    font-size: 55px;
+}
+
+.oquevemnacaixa > figure{
+    display: inline-block;
+}
+
+/*
+---------empresa--------
+*/
+
+.anuncioempresa{
+    background-color: #ffffff;
+    padding-bottom: 25px;
+}
+
+.logo-apple{
+    text-align: center;
+}
+
+.sobreaapple{
+    color:#ffffff;
+    text-align:justify;
+}
+
+.criadoresapple, .fundocod{
+    display:flex;
+    align-items: center;
+    margin:0px;
+    padding:0px;
+    padding-top: 0px;
+    justify-content:center;
+    align-content: space-between;
+    border-bottom: none;
+}
+
+figure{
+    margin:0px;
+    padding:0px;
+}
+
+.criadoresapple > figure{
+    margin:0px;
+    padding:0px;
+}
+
+.servicosapple{
+    background-color: #F9F9FA;
+    display:grid;
+    padding: 50px 70px;
+    text-align: justify;
+    align-items: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.7rem;
+}
+
+.grid-container-servicos {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px;
+    place-items: center;
+    justify-content: center;
+    place-content: center;
+    place-self: center;
+
+}
+
+.servicosapple h1{
+    text-align: center;
+}
+
+/*
+---------autor--------
+  
+*/
+
+.apresentacao {
+    background-color: rgb(236, 224, 224);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5rem;
+    width: 900px;
+    height: 400px;
+    position:relative;
+    border-radius: 0.6rem;
+
+    display: grid;
+    grid-column-gap: 100px;
+    grid-row-gap: 100px;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 200px;
+    margin: 0px;
+    line-height: 23px;
+
+    place-items:center;
+    justify-content: center;
+    place-content: center;
+    place-self: center;
+    
+    animation: pulse 0.7s infinite;
+    animation-direction: alternate;
+}
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      filter: brightness(100%);
+    }
+    100% {
+      transform: scale(1.03);
+      filter: brightness(110%);
+    }
+  }
+
+.fotoapresentacao, .textoapresentacao{
+    width: 290px;
+    height: 220px; 
+}
+
+.boxcontato {
+    width: 100px;
+    height: 100px; 
+    position: fixed;
+    z-index: 900;
+    left: 75rem;
+    top: 70rem;
+    background-color:none;   
+}
+
+.boxcontato svg:hover{
+    color: rgb(7, 162, 111);
+}
+
+.boxcontato svg{
+    color:#898f94;
+}
+
+.fundocod{
+    background-image: url('imagens/progbackground.jpg');
+    padding: 290px 50px;
+    display: flex;
+}
+
+.sobregabi{
+    grid-area: main;
+    background-color: #e2dada;
+    color:#000000;
+    padding: 60px 70px;
+    margin-top: 0px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.7rem;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-left: 30px;
+    border: 30px;
+    margin-top:0px;
+}
+
+.sobregabi > h3{
+    text-align: left;
+}
+.unicef{
+    text-decoration: none;
+}
+.logo{
+    color: white;
+}
+summary{
+    list-style: none;
+    cursor: pointer;
+}
+details summary:after {
+    content: "+";
+    color: black;
+    position: absolute;
+    font-size: 1.75rem;
+    line-height: 0;
+    margin-top: 0.75rem;
+    right: 0;
+    font-weight: 200;
+    transform-origin: center;
+    transition: 200ms linear;
+  }
+/*
+--FALTOU PASSAR PARA MOBILE
+*/
